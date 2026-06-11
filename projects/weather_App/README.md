@@ -1,16 +1,115 @@
-# React + Vite
+# 🌤️ Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and clean weather app built with React and Vite. Search any city to get real-time temperature, humidity, weather condition, and wind speed using the OpenWeatherMap API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Preview
 
-## React Compiler
+> A pink-gradient card UI where users enter a city name and instantly see live weather data including temperature, humidity, condition, and wind speed.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔍 Search weather by city name
+- 🌡️ Displays temperature (°C), humidity, weather condition, and wind speed
+- 🎨 Clean gradient UI with responsive design
+- ⚡ Built with Vite for fast development and builds
+- 📦 Uses Axios for API requests
+
+---
+
+## 🗂️ Project Structure
+
+```
+weather-app/
+├── index.html
+├── vite.config.js
+├── package.json
+├── .env               ← your API key goes here (never commit this)
+├── .gitignore
+└── src/
+    ├── main.jsx
+    ├── index.css
+    ├── App.jsx
+    └── App.css
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v18 or higher)
+- A free API key from [OpenWeatherMap](https://openweathermap.org/api)
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/weather-app.git
+   cd weather-app
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Set up your API key**
+
+   Create a `.env` file in the project root:
+   ```
+   VITE_API_KEY=your_openweathermap_api_key
+   ```
+
+4. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser at `http://localhost:5173`
+
+---
+
+## 🔧 Available Scripts
+
+| Command | Description |
+|--------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview production build |
+| `npm run lint` | Run ESLint |
+
+---
+
+## 🌐 API Used
+
+- [OpenWeatherMap - Current Weather API](https://openweathermap.org/current)
+  - Endpoint: `api.openweathermap.org/data/2.5/weather`
+  - Units: Metric (°C)
+
+---
+
+## 🛠️ Built With
+
+- [React 19](https://react.dev/)
+- [Vite 7](https://vitejs.dev/)
+- [Axios](https://axios-http.com/)
+- [OpenWeatherMap API](https://openweathermap.org/api)
+
+---
+
+## ⚠️ Important
+
+Never commit your `.env` file to GitHub. Make sure `.env` is listed in your `.gitignore`:
+```
+.env
+```
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
